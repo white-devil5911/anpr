@@ -6,31 +6,25 @@
       font-family: 'Segoe UI', sans-serif;
   /* Navbar customization */
   }
-  .navbar{
-    background-color: #0d4141;
-    border-radius: 0.7rem;
-    margin=bottom: 2px;
-
+  .navbar {
+    background-color: #161b22;
   }
-  /* Change navbar font color */
-.navbar .navbar-nav .nav-link {
-  color: #27a9ad ;  /* Neon blue */
-  margin: 0 15px;
-  font-weight: 500;
-}
 
-/* Change brand font color */
-.navbar .navbar-brand {
-  color: #00f7ff ;
-}
+  .nav-link:hover,
+  .nav-btn:hover {
+    color: #0dcaf0 !important;
+    transition: 0.3s ease;
+  }
 
-/* Center navbar items */
-.navbar-nav {
-  margin: 20px auto;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
+  .btn-custom {
+    background-color: #0dcaf0;
+    color: #000;
+  }
+
+  .btn-custom:hover {
+    background-color: #00b3d6;
+    color: #fff;
+  }
 .nav-link.nav-btn {
   padding: 8px 16px;
   border-radius: 5px;
@@ -177,3 +171,60 @@
     .google-icon {
       margin-right: 8px;
     }
+    ansition: 0.3s ease;
+    }
+
+    .btn-custom {
+      background-color: #0dcaf0;
+      color: #000;
+    }
+
+    .btn-custom:hover {
+      background-color: #00b3d6;
+      color: #fff;
+    }
+
+    .signup-container {
+      padding-top: 130px;
+      padding-bottom: 80px;
+    }
+
+    .signup-card {
+      background-color: #161b22;
+      border: none;
+      border-radius: 15px;
+      padding: 30px;
+      box-shadow: 0 0 20px rgba(13, 202, 240, 0.2);
+    }
+
+    .form-control {
+      background-color: #21262d;
+      border: 1px solid #30363d;
+      color: #fff;
+    }
+
+    .form-control::placeholder {
+      color: #8b949e;
+    }
+
+    .form-control:focus {
+      border-color: #0dcaf0;
+      box-shadow: 0 0 5px #0dcaf0;
+    }
+
+    .google-btn {
+      background-color: #ffffff;
+      color: #000;
+      border: none;
+      transition: 0.3s ease;
+    }
+
+    .google-btn:hover {
+      background-color: #ddd;
+      color: #000;
+    }
+
+    .google-icon {
+      margin-right: 8px;
+    }
+  
