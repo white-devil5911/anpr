@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>ANPR Complainant Dashboard</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <link rel="stylesheet" href="dash.css">
+</head>
+<body>
+  <div class="container-fluid">
+    <div class="row">
+      <!-- Sidebar -->
+      <div class="col-md-3 sidebar">
+        <h4>ANPR Dashboard</h4>
+        <a href="#" class="active"><i class="fas fa-dashboard me-2"></i> Dashboard</a>
+        <a href="#"><i class="fas fa-car me-2"></i> My Cars</a>
+        <a href="#"><i class="fas fa-file-alt me-2"></i> Complaints</a>
+        <a href="#"><i class="fas fa-user me-2"></i> Profile</a>
+        <a href="#"><i class="fas fa-sign-out-alt me-2"></i> Logout</a>
+      </div>
+
+      <div class="col-md-9 p-4">
+        <h2 class="mb-4">Welcome, [username]</h2>
+
+        <!-- Add Car Form -->
+        <div class="card">
+          <h5>Add a Vehicle</h5>
+          <form>
+            <div class="row">
+              <div class="col-md-6">
+                <label>Make</label>
+                <input type="text" class="form-control" placeholder="e.g., Toyota">
+              </div>
+              <div class="col-md-6">
+                <label>Model</label>
+                <input type="text" class="form-control" placeholder="e.g., Corolla">
+              </div>
+              <div class="col-md-6">
+                <label>Variant</label>
+                <input type="text" class="form-control" placeholder="e.g., Altis 1.6">
+              </div>
+              <div class="col-md-6">
+                <label>Color</label>
+                <input type="text" class="form-control" placeholder="e.g., White">
+              </div>
+              <div class="col-md-6">
+                <label>Registration Number</label>
+                <input type="text" class="form-control" placeholder="e.g., ABC-123">
+              </div>
+              <div class="col-md-12 mt-3">
+                <button class="btn btn-custom">Add Car</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+        <!-- Registered Cars -->
+        <div class="card">
+          <h5>My Registered Cars</h5>
+          <table class="table table-bordered mt-3">
+            <thead>
+              <tr>
+                <th>Make</th>
+                <th>Model</th>
+                <th>Variant</th>
+                <th>Color</th>
+                <th>Reg No</th>
+                <th>Action</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>Toyota</td>
+                <td>Corolla</td>
+                <td>Altis</td>
+                <td>White</td>
+                <td>ABC-123</td>
+                <td><button class="btn btn-danger btn-sm">Delete</button></td>
+  
+        
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Launch Complaint -->
+        <div class="card">
+          <h5>Launch a Complaint</h5>
+          <form>
+            <div class="row">
+              <div class="col-md-6">
+                <label>Last Known Location</label>
+                <input type="text" class="form-control" placeholder="Enter location">
+              </div>
+              <div class="col-md-6">
+                <label>Date & Time</label>
+                <input type="datetime-local" class="form-control">
+              </div>
+              <div class="col-md-6">
+                <label>Color</label>
+                <input type="text" class="form-control" placeholder="e.g., White">
+              </div>
+              <div class="col-md-6">
+                <label>Variant</label>
+                <input type="text" class="form-control" placeholder="e.g., Altis">
+              </div>
+              <div class="col-md-6">
+                <label>Registration Number</label>
+                <input type="text" class="form-control" placeholder="e.g., ABC-123">
+              </div>
+              <div class="col-md-12 mt-3">
+                <label>Description</label>
+                <textarea class="form-control" rows="3" placeholder="Brief description of theft..."></textarea>
+              </div>
+              <div class="col-md-12 mt-3">
+                <button class="btn btn-custom">Submit Complaint</button>
+              </div>
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
